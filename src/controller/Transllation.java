@@ -36,12 +36,12 @@ public class Transllation {
     public static String traduzir(String texto)throws IOException, InterruptedException{
         String resposta = texto;
         try{
-            //URL url = new URL("https://www.googleapis.com/language/translate/v2?key=AIzaSyDXlJpemuqjkWhBx6rVjyv4jhMOmMF4MAk");            
+            //URL url = new URL("https://www.googleapis.com/language/translate/v2?key=");            
             RequestTranslate requestJson = new RequestTranslate();
             requestJson.q = texto;
             requestJson.target = "pt";
             
-            String postUrl = "https://www.googleapis.com/language/translate/v2?key=AIzaSyDXlJpemuqjkWhBx6rVjyv4jhMOmMF4MAk";
+            String postUrl = "https://www.googleapis.com/language/translate/v2?key=myKey";
             Gson gson = new Gson();
             HttpClient httpClient = HttpClientBuilder.create().build();
             HttpPost post = new HttpPost(postUrl);
