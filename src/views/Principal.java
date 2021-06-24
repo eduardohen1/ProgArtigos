@@ -22,6 +22,7 @@ public class Principal extends javax.swing.JFrame {
      */
     public Principal() {
         initComponents();
+        txtCodigoView.setText("0");
     }
 
     /**
@@ -33,7 +34,8 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jDesktopPane1 = new javax.swing.JDesktopPane();
+        jTabbedPane3 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -55,6 +57,31 @@ public class Principal extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        txtRepositorioView = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        txtTituloView = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        txtAutoresView = new javax.swing.JTextField();
+        jLabel12 = new javax.swing.JLabel();
+        txtAnoView = new javax.swing.JTextField();
+        jLabel13 = new javax.swing.JLabel();
+        txtPalavrasChaveView = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        txtDoiView = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        txtIntroducaoView = new javax.swing.JTextPane();
+        jLabel16 = new javax.swing.JLabel();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        txtConclusaoView = new javax.swing.JTextPane();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jLabel17 = new javax.swing.JLabel();
+        txtCodigoView = new javax.swing.JTextField();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         Imprimir = new javax.swing.JMenuItem();
@@ -154,7 +181,7 @@ public class Principal extends javax.swing.JFrame {
                             .addComponent(txtAno)
                             .addComponent(jScrollPane1)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(0, 359, Short.MAX_VALUE)
+                        .addGap(0, 342, Short.MAX_VALUE)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -196,13 +223,226 @@ public class Principal extends javax.swing.JFrame {
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 45, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("tab1", jPanel1);
+        jTabbedPane3.addTab("Cadatro", jPanel1);
+
+        jLabel9.setText("Repositório:");
+
+        txtRepositorioView.setEnabled(false);
+
+        jLabel10.setText("Título:");
+
+        txtTituloView.setEnabled(false);
+
+        jLabel11.setText("Autores:");
+
+        txtAutoresView.setEnabled(false);
+        txtAutoresView.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAutoresViewActionPerformed(evt);
+            }
+        });
+
+        jLabel12.setText("Ano:");
+
+        txtAnoView.setEnabled(false);
+        txtAnoView.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtAnoViewActionPerformed(evt);
+            }
+        });
+
+        jLabel13.setText("Palavras-chave:");
+
+        txtPalavrasChaveView.setEnabled(false);
+        txtPalavrasChaveView.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPalavrasChaveViewActionPerformed(evt);
+            }
+        });
+
+        jLabel14.setText("DOI:");
+
+        txtDoiView.setEnabled(false);
+        txtDoiView.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDoiViewActionPerformed(evt);
+            }
+        });
+
+        jLabel15.setText("Introdução pt:");
+
+        jScrollPane3.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane3.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+        jScrollPane3.setViewportView(txtIntroducaoView);
+
+        jLabel16.setText("Conclusão pt:");
+
+        jScrollPane4.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        jScrollPane4.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+        jScrollPane4.setViewportView(txtConclusaoView);
+
+        jButton3.setText("Avançar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+
+        jButton4.setText("Retroceder");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        jLabel17.setText("Código:");
+
+        txtCodigoView.setEnabled(false);
+
+        jButton5.setText("...");
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        jButton6.setText("...");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel10)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel12)
+                            .addComponent(jLabel13)
+                            .addComponent(jLabel14)
+                            .addComponent(jLabel15)
+                            .addComponent(jLabel16))
+                        .addGap(21, 21, 21)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtDoiView)
+                            .addComponent(txtPalavrasChaveView)
+                            .addComponent(txtRepositorioView)
+                            .addComponent(txtTituloView)
+                            .addComponent(txtAutoresView)
+                            .addGroup(jPanel2Layout.createSequentialGroup()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtAnoView, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel2Layout.createSequentialGroup()
+                                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 401, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(0, 0, Short.MAX_VALUE))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel17)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(txtCodigoView, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(198, 198, 198)
+                        .addComponent(jButton4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(txtRepositorioView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(txtTituloView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(txtAutoresView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(txtAnoView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel13)
+                            .addComponent(txtPalavrasChaveView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel14)
+                            .addComponent(txtDoiView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel15)
+                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jButton6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel16))
+                    .addComponent(jButton5))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGap(3, 3, 3)
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel17)
+                            .addComponent(txtCodigoView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(64, Short.MAX_VALUE))
+        );
+
+        jLabel15.getAccessibleContext().setAccessibleName("Introdução pt:");
+
+        jTabbedPane3.addTab("Dados Cadastrados", jPanel2);
+
+        jDesktopPane1.setLayer(jTabbedPane3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
+        jDesktopPane1.setLayout(jDesktopPane1Layout);
+        jDesktopPane1Layout.setHorizontalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 553, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(141, Short.MAX_VALUE))
+        );
+        jDesktopPane1Layout.setVerticalGroup(
+            jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jDesktopPane1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 536, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(74, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(jDesktopPane1, java.awt.BorderLayout.CENTER);
 
         jMenu1.setText("Arquivo");
 
@@ -225,43 +465,43 @@ public class Principal extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 570, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(33, Short.MAX_VALUE))
-        );
-
-        jTabbedPane1.getAccessibleContext().setAccessibleName("Cadastro");
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtAutoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAutoresActionPerformed
+    private void ImprimirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImprimirMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtAutoresActionPerformed
+        
+    }//GEN-LAST:event_ImprimirMouseClicked
 
-    private void txtAnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoActionPerformed
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtAnoActionPerformed
+        ConexaoMySQL conexaoMySQL = new ConexaoMySQL(conexao);
+        if(conexaoMySQL.Conectar())
+        exibirDadosArtigo(conexaoMySQL.buscarArtigo(Integer.parseInt(txtCodigoView.getText()), 1));
+    }//GEN-LAST:event_jButton4ActionPerformed
 
-    private void txtPalavrasChaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPalavrasChaveActionPerformed
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPalavrasChaveActionPerformed
+        ConexaoMySQL conexaoMySQL = new ConexaoMySQL(conexao);
+        if(conexaoMySQL.Conectar())
+        exibirDadosArtigo(conexaoMySQL.buscarArtigo(Integer.parseInt(txtCodigoView.getText()), 0));
+    }//GEN-LAST:event_jButton3ActionPerformed
 
-    private void txtDoiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDoiActionPerformed
+    private void txtDoiViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDoiViewActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtDoiActionPerformed
+    }//GEN-LAST:event_txtDoiViewActionPerformed
+
+    private void txtPalavrasChaveViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPalavrasChaveViewActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPalavrasChaveViewActionPerformed
+
+    private void txtAnoViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoViewActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAnoViewActionPerformed
+
+    private void txtAutoresViewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAutoresViewActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAutoresViewActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
@@ -276,7 +516,7 @@ public class Principal extends javax.swing.JFrame {
             artigos.setIntroducao(txtIntroducao.getText());
             artigos.setConclusao(txtConclusao.getText());
             artigos.setIntroducao_pt(Transllation.traduzir(txtIntroducao.getText()));
-            artigos.setConclusao_pt(Transllation.traduzir(txtConclusao.getText()));        
+            artigos.setConclusao_pt(Transllation.traduzir(txtConclusao.getText()));
             //
             ConexaoMySQL conexaoMySQL = new ConexaoMySQL(conexao);
             if(conexaoMySQL.Conectar()){
@@ -295,10 +535,35 @@ public class Principal extends javax.swing.JFrame {
         limparTela();
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void ImprimirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ImprimirMouseClicked
+    private void txtDoiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDoiActionPerformed
         // TODO add your handling code here:
-        
-    }//GEN-LAST:event_ImprimirMouseClicked
+    }//GEN-LAST:event_txtDoiActionPerformed
+
+    private void txtPalavrasChaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPalavrasChaveActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPalavrasChaveActionPerformed
+
+    private void txtAnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAnoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAnoActionPerformed
+
+    private void txtAutoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtAutoresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtAutoresActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+        ExibirTexto e = new ExibirTexto((txtIntroducaoView.getText()));
+        jDesktopPane1.add(e);
+        e.show();        
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        // TODO add your handling code here:
+        ExibirTexto e = new ExibirTexto((txtConclusaoView.getText())); 
+        jDesktopPane1.add(e);
+        e.show();
+    }//GEN-LAST:event_jButton5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -344,13 +609,54 @@ public class Principal extends javax.swing.JFrame {
         txtDoi.setText("");
         txtIntroducao.setText("");
         txtConclusao.setText("");
+        txtRepositorio.requestFocus();
+    }
+    
+    private void limparTelaExibicao(){
+        txtRepositorioView.setText("");
+        txtTituloView.setText("");
+        txtAutoresView.setText("");
+        txtAnoView.setText("");
+        txtPalavrasChaveView.setText("");
+        txtDoiView.setText("");
+        txtIntroducaoView.setText("");
+        txtConclusaoView.setText("");
+        txtCodigoView.setText("0");
+    }
+    
+    private void exibirDadosArtigo(Artigos artigo){
+        limparTelaExibicao();
+        if (artigo != null){
+            txtRepositorioView.setText(artigo.getRepositorio());
+            txtTituloView.setText(artigo.getArtigo());
+            txtAutoresView.setText(artigo.getAutores());
+            txtAnoView.setText(artigo.getAno().toString());
+            txtPalavrasChaveView.setText(artigo.getPalavrasChaves());
+            txtDoiView.setText(artigo.getDoi());
+            txtIntroducaoView.setText(artigo.getIntroducao_pt());
+            txtConclusaoView.setText(artigo.getConclusao_pt());
+            txtCodigoView.setText(artigo.getId().toString());
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem Imprimir;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -358,22 +664,35 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JPopupMenu.Separator jSeparator1;
-    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JTextField txtAno;
+    private javax.swing.JTextField txtAnoView;
     private javax.swing.JTextField txtAutores;
+    private javax.swing.JTextField txtAutoresView;
+    private javax.swing.JTextField txtCodigoView;
     private javax.swing.JTextPane txtConclusao;
+    private javax.swing.JTextPane txtConclusaoView;
     private javax.swing.JTextField txtDoi;
+    private javax.swing.JTextField txtDoiView;
     private javax.swing.JTextPane txtIntroducao;
+    private javax.swing.JTextPane txtIntroducaoView;
     private javax.swing.JTextField txtPalavrasChave;
+    private javax.swing.JTextField txtPalavrasChaveView;
     private javax.swing.JTextField txtRepositorio;
+    private javax.swing.JTextField txtRepositorioView;
     private javax.swing.JTextField txtTitulo;
+    private javax.swing.JTextField txtTituloView;
     // End of variables declaration//GEN-END:variables
 }

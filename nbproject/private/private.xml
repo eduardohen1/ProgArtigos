@@ -5,8 +5,9 @@
         <group>
             <file>file:/D:/Fontes/Java/AplicacaoArtigos/src/controller/ConexaoMySQL.java</file>
             <file>file:/D:/Fontes/Java/AplicacaoArtigos/src/views/Principal.java</file>
-            <file>file:/D:/Fontes/Java/AplicacaoArtigos/src/views/Imprimir.java</file>
-            <file>file:/D:/Fontes/Java/AplicacaoArtigos/src/Impressao/Artigos.jrxml</file>
+            <file>file:/D:/Fontes/Java/AplicacaoArtigos/src/controller/Transllation.java</file>
+            <file>file:/D:/Fontes/Java/AplicacaoArtigos/src/views/ExibirTexto.java</file>
+            <file>file:/D:/Fontes/Java/AplicacaoArtigos/src/model/Artigos.java</file>
         </group>
     </open-files>
 </project-private>

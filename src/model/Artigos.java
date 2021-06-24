@@ -9,7 +9,7 @@ import java.util.Objects;
 
 /**
  *
- * @author MGF
+ * @author Eduardo Henrique
  */
 public class Artigos {
     private Integer id;
@@ -24,7 +24,19 @@ public class Artigos {
     private String introducao_pt;
     private String conclusao_pt;
     
-    public Artigos(){}
+    public Artigos(){
+        this.id = 0;
+        this.repositorio = "";
+        this.artigo = "";
+        this.autores = "";
+        this.ano = 2021;
+        this.palavrasChaves = "";
+        this.doi = "";
+        this.introducao = "";
+        this.conclusao = "";
+        this.introducao_pt = "";
+        this.conclusao_pt = "";
+    }
 
     public Artigos(String repositorio, String artigo, String autores, Integer ano, String palavrasChaves, String doi, String introducao, String conclusao, String introducao_pt, String conclusao_pt) {
         this.repositorio = repositorio;
