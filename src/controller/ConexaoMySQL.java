@@ -15,7 +15,7 @@ import model.Conexao;
 
 /**
  *
- * @author MGF
+ * @author Eduardo Henrique
  */
 public class ConexaoMySQL {
     private Conexao conexao = null;

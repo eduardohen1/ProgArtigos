@@ -27,7 +27,7 @@ import org.apache.http.util.EntityUtils;
 
 /**
  *
- * @author MGF
+ * @author Eduardo Henrique
  */
 public class Transllation {
     
